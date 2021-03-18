@@ -1,5 +1,201 @@
-<html>
-  <body>
-    hello
-  </body>
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<title>Harold Pescuela</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link id="theme" rel="stylesheet" type="text/css" href="css/style.css" /> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.15.0/inter.min.css" integrity="sha512-LmuBiKMv0sdyc1LQk0LPrsjj3KSoVgVpAXUoFGY8Ye5Zi1mff0it3I42dkh3/NGQgtkqiHcdWOcHGUmOzYLETQ==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+	<link rel="icon" type="image/ico" href="/img/pescuela-1.ico">
+	<script> 
+		function toggleTheme() {
+			var theme = document.getElementsByTagName('link')[0]; 
+			if (theme.getAttribute('href') == 'css/style.css') { 
+				theme.setAttribute('href', 'css/style-light.css');
+				document.getElementById("theme-switch-icon").className = "fas fa-moon";
+			} else { 
+				theme.setAttribute('href', 'css/style.css');
+				document.getElementById("theme-switch-icon").className = "fas fa-sun";
+			} 
+		} 
+	</script>
+	<style type="text/css">
+		@font-face{
+			font-family: SF Mono;
+			src: url(SFMono.ttf);
+			font-weight: 700;
+		}
+		#binary-canvas{
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			z-index: -100;
+			opacity: 0.15;
+			font-size: 10px;
+			font-family: SF Mono;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="binary-canvas"></canvas>
+	<div id="theme-switch" onclick="toggleTheme()"><i id="theme-switch-icon" class="fas fa-sun"></i></div>
+	<div id="panel">
+		<p id="greet" class="line-1 anim-typewriter">Hello, world! I am </p>
+		<p id="author_name">Harold Pescuela.</p>
+		<p id="author_description">From programming to integrating it into hardware, I love the processes in between.</p>
+	</div>
+	<div id="panel_2">
+		<button class="contact-1" onclick="location.href='mailto:harold@pescuela.dev'" >Say hello <i class="fas fa-envelope"></i></button>
+	</div>
+	<div id="rest" class="inner_content_wrapper">
+		<div class="inner_content">
+			<h1 class="inner_content_title">About Me</h1>
+			<p class="inner_content_paragraphs">
+			I am a graduate of Computer Engineering from University of San Agustin - Iloilo</p>
+		</div>
+		<div class="inner_content">
+			<h1 class="inner_content_title">Projects</h1>
+			<div class="project_container">
+				<!------->
+				<div class="project_photo">
+					<p class="project_photo_title">IoT-Based Outdoor Air Quality Monitoring System</p>
+					<div class="img-cover"><img id="project-1-img" src="https://static.pescuela.dev/images/projects/project-1.svg"></div>
+				</div>
+				<div class="mobile-info-card">
+					Using a Raspberry Pi and low-cost environmental sensors, the system is built to collect outdoor air quality and send the data to the cloud.
+					<div class="mobile-info-card-techs">Amazon AWS&emsp;IoT&emsp;Raspberry Pi</div>
+				</div>
+				<div class="project_row_desc">
+					<p class="project_label">IoT-Based Outdoor Air Quality Monitoring System</p>
+					<div class="project_text">Using a Raspberry Pi and low-cost environmental sensors, the system is built to collect outdoor air quality and send the data to the cloud.</div>
+					<div class="project__techs"><span>Amazon AWS</span><span>Raspberry Pi</span><span>IoT</span></div></div>
+
+					<!--------->
+					<div class="project_photo">
+						<p class="project_photo_title">Smart Lamp Powered by Raspberry Pi</p>
+						<div class="img-cover"><img id="project-2-img" src="https://static.pescuela.dev/images/projects/project-3.png"></div>
+					</div>
+					<div class="mobile-info-card">
+						Using a Raspberry Pi, a temperature sensor, and the Google Assistant SDK, the system is able to function as a smart home assistant (and optionally control appliances).
+						<div class="mobile-info-card-techs">Google SDK&emsp;Raspberry Pi&emsp;Flask</div>
+					</div>
+					<div class="project_row_desc">
+						<p class="project_label">Smart Lamp Powered by Raspberry Pi</p>
+						<p class="project_text">Using a Raspberry Pi, a temperature sensor, and the Google Assistant SDK, the system is able to function as a smart home assistant (and optionally control appliances).</p>
+						<div class="project__techs"><span>Google SDK</span><span>Raspberry Pi</span><span>Flask</span></div>
+					</div>
+					<!--------->
+					<div class="project_photo">
+						<p class="project_photo_title">Voice-Controlled Home Automation</p>
+						<div class="img-cover"><img id="project-3-img" src="https://static.pescuela.dev/images/projects/project-4.png"></div>
+					</div>
+					<div class="mobile-info-card">
+						Using a Raspberry Pi, a temperature sensor, and the Amazon Alexa Voice Service, the system is able to function as a smart home device that is able to control appliances.
+						<div class="mobile-info-card-techs">Amazon AVS&emsp;IoT&emsp;Webhooks</div>
+					</div>
+					<div class="project_row_desc">
+						<p class="project_label">Voice-Controlled Home Automation</p>
+						<p class="project_text">Using a Raspberry Pi, a temperature sensor, and the Amazon Alexa Voice Service, the system is able to function as a smart home device that is able to control appliances.</p>
+						<div class="project__techs"><span>Amazon AVS</span><span>IoT</span><span>Webhooks</span></div>
+					</div>
+					<!--------->
+					<div class="project_photo">
+						<p class="project_photo_title">RFID-Based Attendance Monitoring System</p>
+						<div class="img-cover"><img id="project-4-img" src="https://static.pescuela.dev/images/projects/project-2.png"></div>
+					</div>
+					<div class="mobile-info-card">
+						Using a Raspberry Pi, and a low-cost RFID scanner, the system is able to scan RFIDs and store information in a local MySQL server. A website is used to view information. <br>
+						<div class="mobile-info-card-techs">Raspberry Pi&emsp;LAMP Stack</div>
+					</div>
+					<div class="project_row_desc">
+						<p class="project_label">RFID-Based Attendance Monitoring System</p>
+						<p class="project_text">Using a Raspberry Pi, and a low-cost RFID scanner, the system is able to scan RFIDs and store information in a local MySQL server. A website is used to view information.</p>
+						<div class="project__techs"><span>Raspberry Pi</span><span>LAMP Stack</span></div>
+					</div>
+				</div>
+				<h1 class="inner_content_title">Get in touch</h1>
+				<p id="contact-info">I'm not currently looking for new opportunities but my inbox is still open.</p>
+				<div style="text-align: center;"><button class="contact-2" onclick="location.href='mailto:harold@pescuela.dev'" >Say hello <i class="fas fa-envelope"></i></button></div>
+				<a href="https://www.linkedin.com/in/haroldpescuela/"><div id="bottom"><img style="width:100px;vertical-align: middle;" src="https://static.pescuela.dev/images/linkedin.png"/></div></a>
+
+			</div>
+		</div>
+	</div>			
+	<script type="text/javascript">
+		$('#author_name').hide().delay(2500).fadeIn(1000);
+		$('#author_description').hide().delay(2600).fadeIn(1000);
+		$('#panel_2').hide().delay(2800).fadeIn(1000);
+		$('#rest').hide().delay(3000).fadeIn(1000);
+	</script>
+	<script type="text/javascript">
+		const canvas = document.getElementById('binary-canvas');
+		const ctx = canvas.getContext('2d');
+		let raf;
+
+		ctx.canvas.width  = window.innerWidth;
+		ctx.canvas.height = window.innerHeight;
+
+		ctx.font = '15px SF Mono';
+		ctx.fillStyle = '#454545';
+
+		const fontSize = 15;
+		const columns = Math.floor(canvas.width / fontSize);
+		const rows = Math.floor(canvas.height / fontSize);
+
+		const binChars = ['0', '1'];
+		const bits = [];
+		const bitHeight = fontSize;
+		const bitWidth = fontSize;
+
+// Populate array of 'bits'
+for(let r = 0; r < rows; r++) {
+	for(let c = 0; c < columns; c++) {
+		bits.push({
+			x: c * bitWidth,
+			y: r * bitHeight,
+			value: binChars[Math.floor(Math.random() * binChars.length)],
+			hasDrawn: false
+		});
+	}
+}
+
+// Vars for manually calculating frame rate
+const fps = 100;
+const interval = 1000/fps;
+let now;
+let then = Date.now();
+let delta;
+
+// Draw all bits once before starting animation
+for(let bit of bits) {
+	ctx.clearRect(bit.x, bit.y, bitWidth, bitHeight);
+	ctx.fillText(bit.value, bit.x, bit.y + bitHeight);
+	bit.hasDrawn = true;
+}
+
+function draw() {
+	raf = window.requestAnimationFrame(draw);
+	now = Date.now();
+	delta = now - then;
+
+	if (delta > interval) {
+		for(let bit of bits) {
+      if(bit.hasDrawn === true && (Math.random() * 100) > 95) { // If passes the randomness check
+      	let newVal = (bit.value === binChars[1]) ? binChars[0] : binChars[1];
+
+      	ctx.clearRect(bit.x, bit.y, bitWidth, bitHeight);
+      	ctx.fillText(newVal, bit.x, bit.y + bitHeight);
+      	bit.value = newVal;
+      }
+  }
+  then = now - (delta % interval);
+}
+}
+draw();
+</script>
+<!--- 14 MARCH 2021 ----- ILOILO CITY, PHILIPPINES ------>
+<!--- data, speaks. ------>
+</body>
 </html>
