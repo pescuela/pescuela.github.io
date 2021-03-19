@@ -21,25 +21,21 @@
 			} 
 		} 
 	</script>
+	<script type="text/javascript">
+		$('#author_name').hide().delay(2500).fadeIn(1000);
+		$('#author_description').hide().delay(2600).fadeIn(1000);
+		$('#panel_2').hide().delay(2800).fadeIn(1000);
+		$('#rest').hide().delay(3000).fadeIn(1000);
+	</script>
 	<style type="text/css">
 		@font-face{
 			font-family: SF Mono;
 			src: url(SFMono.ttf);
 			font-weight: 700;
 		}
-		#binary-canvas{
-			position: fixed;
-			width: 100%;
-			height: 100%;
-			z-index: -100;
-			opacity: 0.15;
-			font-size: 10px;
-			font-family: SF Mono;
-		}
 	</style>
 </head>
 <body>
-	<canvas id="binary-canvas"></canvas>
 	<div id="theme-switch" onclick="toggleTheme()"><i id="theme-switch-icon" class="fas fa-sun"></i></div>
 	<div id="panel">
 		<p id="greet" class="line-1 anim-typewriter">Hello, world! I am </p>
@@ -123,12 +119,6 @@
 			</div>
 		</div>
 	</div>			
-	<script type="text/javascript">
-		$('#author_name').hide().delay(2500).fadeIn(1000);
-		$('#author_description').hide().delay(2600).fadeIn(1000);
-		$('#panel_2').hide().delay(2800).fadeIn(1000);
-		$('#rest').hide().delay(3000).fadeIn(1000);
-	</script>
 <!--- 14 MARCH 2021 ----- ILOILO CITY, PHILIPPINES ------>
 <!--- data, speaks. ------>
 </body>
