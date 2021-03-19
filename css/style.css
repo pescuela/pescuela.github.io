@@ -338,9 +338,8 @@ span{
 	border-radius: 999px;
 	top: 20px;
 	right: 20px;
+	cursor: pointer;
 }
-
-
 #theme-switch-icon{
 	display: table-cell;
 	vertical-align: middle;
