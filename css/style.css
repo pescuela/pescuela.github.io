@@ -1,9 +1,9 @@
 html{
 	background: rgb(3,16,36);
-background: -moz-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
-background: -webkit-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
-background: linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#031024",endColorstr="#122b2f",GradientType=1);
+	background: -moz-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
+	background: linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#031024",endColorstr="#122b2f",GradientType=1);
 	font-family: 'Inter';
 	font-style:  normal;
 	font-weight: 400;
@@ -64,10 +64,10 @@ h1::after {
 #course{
 	opacity: 0;
 	font-weight: 600;
-    font-size: 25px;
-    line-height: 14px;
-    color: #135aaa;
-    animation: fadeUp 0.5s;
+	font-size: 25px;
+	line-height: 14px;
+	color: #135aaa;
+	animation: fadeUp 0.5s;
 	animation-delay: 2.2s;
 	animation-fill-mode: forwards;
 }
@@ -91,7 +91,7 @@ h1::after {
 	border-radius: 8px;
 	cursor: pointer;
 	color: #fff;
-	font-family: SF Mono;
+	font-family: 'Roboto Mono', monospace;
 	font-weight: 700;
 	font-size: 18px;
 	animation: fadeUp 0.7s;
@@ -304,7 +304,7 @@ span{
 	box-shadow: 10px 10px 23px -4px rgba(0,0,0,0.75);
 }
 #greet{
-	font-family: SF Mono;
+	font-family: 'Roboto Mono', monospace;
 	font-weight: 400;
 	color: #f46a16;
 	font-size: clamp(18px,4.5vw,25px);
@@ -331,7 +331,7 @@ span{
 	border-radius: 8px;
 	cursor: pointer;
 	color: #fff;
-	font-family: SF Mono;
+	font-family: 'Roboto Mono', monospace;
 	font-weight: 700;
 	font-size: 18px;
 	margin: 10px 0 0 10px;
@@ -345,10 +345,10 @@ span{
 	text-align: center;
 	padding: 4px;
 	background: rgb(3,16,36);
-background: -moz-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
-background: -webkit-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
-background: linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#031024",endColorstr="#122b2f",GradientType=1);
+	background: -moz-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
+	background: linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#031024",endColorstr="#122b2f",GradientType=1);
 	margin: 20px 50px 20px 50px;
 	border-radius: 8px;
 	font-weight: 500;
