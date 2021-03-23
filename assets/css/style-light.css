@@ -335,8 +335,9 @@ span{
 #bottom{
 	text-align: center;
 	padding: 4px;
-	background: #ffffff;;
-	margin: 20px 50px 20px 50px;
+	background: #d5e5f780;
+	margin: 20px auto;
+	width: fit-content;
 	border-radius: 8px;
 	font-weight: 500;
 }

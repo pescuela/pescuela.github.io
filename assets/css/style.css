@@ -1,10 +1,9 @@
 html{
 	background: rgb(3,16,36);
-	background: -moz-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
-	background: linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#031024",endColorstr="#122b2f",GradientType=1);
-	font-family: 'Inter';
+	background: -moz-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(11,27,29,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(11,27,29,1) 100%);
+	background: linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(11,27,29,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#031024",endColorstr="#0b1b1d",GradientType=1);	font-family: 'Inter';
 	font-style:  normal;
 	font-weight: 400;
 	font-display: swap;
@@ -342,14 +341,10 @@ span{
 	transition: 300ms ease-in;
 }
 #bottom{
-	text-align: center;
 	padding: 4px;
-	background: rgb(3,16,36);
-	background: -moz-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
-	background: linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#031024",endColorstr="#122b2f",GradientType=1);
-	margin: 20px 50px 20px 50px;
+	background: #d5e5f780;
+	margin: 20px auto;
+	width: fit-content;
 	border-radius: 8px;
 	font-weight: 500;
 }
