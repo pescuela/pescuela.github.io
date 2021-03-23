@@ -1,13 +1,11 @@
 html{
-	background: rgb(3,16,36);
-	background: -moz-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(11,27,29,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(11,27,29,1) 100%);
-	background: linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(11,27,29,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#031024",endColorstr="#0b1b1d",GradientType=1);	font-family: 'Inter';
+	background: #121e29;
 	font-style:  normal;
 	font-weight: 400;
 	font-display: swap;
 	user-select: none;
+	font-family: Inter;
+	scroll-behavior: smooth;
 }
 /*global*/
 #panel{
@@ -155,8 +153,7 @@ h1::after {
 
 /*projects*/
 .project_photo{
-	background: rgb(0,41,83);
-	background: linear-gradient(249deg, rgba(0,41,83,1) 0%, rgba(11,19,48,1) 100%); 
+	background: #081421;
 	height: auto;
 	display: inline-block;
 	width: 49%;
@@ -222,66 +219,7 @@ h1::after {
 	z-index: 2;
 	position: relative;
 }
-@media only screen and (max-width: 800px) and (min-width: 0px){
-	.project_photo{
-		height: auto;
-		display: inline-block;
-		width: 100%;
-		height: 100px;
-		vertical-align: top;
-		margin-bottom: 0px;
-		font-weight: 700;
-		font-size: 20px;
-		position: relative;
-		z-index: 2;
-	}
-	.project_row_desc{
-		display: none;
-	}
-	#project-1-img{
-		margin: -110px 150px;
-		width: 80%;
-		opacity: 0.2;
-	}
-	#project-2-img{
-		margin: -70px 0px 0px 110px;
-		opacity: 0.2;
-	}
-	#project-3-img{
-		margin: -85px 120px;
-		opacity: 0.2;
-	}
-	#project-4-img{
-		margin: -120px 100px;
-		opacity: 0.2;
-	}
-	.project_photo_title{
-		padding: 5px;
-		display: block;
-		color: #dbd8d8;
-	}
-	.project_label{
-		display: none;
-	}
-	.mobile-info-card{
-		display: block;
-		height: auto;
-		margin: -10px 0px 15px 0px;
-		padding: 20px;
-		border-radius: 7px;
-		color: #c8c4c1;
-		font-size: 18px;
-	}
-	.mobile-info-card-techs{
-		display: block;
-		text-align: right;
-		margin-top: 20px;
-		font-size: 15px;
-		font-weight: 700;
-		color: #f46a16;
-	}
 
-}
 .project__techs{
 	position: absolute;
 	right: 10px;
@@ -297,7 +235,7 @@ span{
 	font-weight: 500;
 	margin-right: 40px;
 	margin: 0px 0px 20px -30px;
-	background-color: #112240;
+	background: #192938;
 	padding: 20px;
 	border-radius: 7px;
 	box-shadow: 10px 10px 23px -4px rgba(0,0,0,0.75);
@@ -308,7 +246,6 @@ span{
 	color: #f46a16;
 	font-size: clamp(18px,4.5vw,25px);
 	margin-bottom: 0px;
-	margin-left: 15px;
 }
 .line-1{
 	border-right: 8px solid;
@@ -373,4 +310,65 @@ span{
 	text-align: center;
 	font-size: 30px;
 	color: darkgoldenrod;
+}
+/*res*/
+@media only screen and (max-width: 800px) and (min-width: 0px){
+	.project_photo{
+		height: auto;
+		display: inline-block;
+		width: 100%;
+		height: 100px;
+		vertical-align: top;
+		margin-bottom: 0px;
+		font-weight: 700;
+		font-size: 20px;
+		position: relative;
+		z-index: 2;
+	}
+	.project_row_desc{
+		display: none;
+	}
+	#project-1-img{
+		margin: -110px 150px;
+		width: 80%;
+		opacity: 0.2;
+	}
+	#project-2-img{
+		margin: -70px 0px 0px 110px;
+		opacity: 0.2;
+	}
+	#project-3-img{
+		margin: -85px 120px;
+		opacity: 0.2;
+	}
+	#project-4-img{
+		margin: -120px 100px;
+		opacity: 0.2;
+	}
+	.project_photo_title{
+		padding: 5px;
+		display: block;
+		color: #dbd8d8;
+	}
+	.project_label{
+		display: none;
+	}
+	.mobile-info-card{
+		display: block;
+		height: auto;
+		margin: -10px 0px 15px 0px;
+		padding: 20px;
+		border-radius: 7px;
+		color: #c8c4c1;
+		font-size: 18px;
+	}
+	.mobile-info-card-techs{
+		display: block;
+		text-align: right;
+		margin-top: 20px;
+		font-size: 15px;
+		font-weight: 700;
+		color: #f46a16;
+	}
+
 }

@@ -5,6 +5,7 @@ html{
 	font-weight: 400;
 	font-display: swap;
 	user-select: none;
+	scroll-behavior: smooth;
 }
 /*global*/
 #panel{
@@ -149,7 +150,7 @@ h1::after {
 
 /*projects*/
 .project_photo{
-	background: #000000;
+	background: #21354a;
 	height: auto;
 	display: inline-block;
 	width: 49%;
@@ -215,6 +216,101 @@ h1::after {
 	z-index: 2;
 	position: relative;
 }
+.project__techs{
+	position: absolute;
+	right: 10px;
+	color: #423636;
+}
+span{
+	margin-left: 10px;
+}
+.project_text{
+	text-align: right;
+	padding-left: 40px;
+	color: #d3d6de;
+	font-weight: 500;
+	margin-right: 40px;
+	margin: 0px 0px 20px -30px;
+	background: #3d3d46;
+	padding: 20px;
+	border-radius: 7px;
+	box-shadow: 10px 10px 23px -4px rgba(0,0,0,0.75);
+}
+#greet{
+	font-family: 'Roboto Mono', monospace;
+	color: #f46a16;
+	font-size: clamp(18px,4.5vw,25px);
+	margin-bottom: 0px;
+}
+.line-1{
+	border-right: 8px solid;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+/* Animation */
+.anim-typewriter{
+	animation: typewriter 2s steps(18) 0s 1 normal both,
+	blinkTextCursor 600ms steps(20) infinite normal;
+}
+
+/*modals*/
+.contact-2{
+	background-color: transparent;
+	padding: 10px;
+	border: solid 1.5px #000000;
+	border-radius: 8px;
+	cursor: pointer;
+	color: #5e5a57;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 700;
+	font-size: 18px;
+	margin: 10px 0 0 10px;
+}
+.contact-2:hover{
+	background-color: #00000042;
+	color: #000000;
+	transition: 300ms ease-in;
+}
+#bottom{
+	padding: 4px;
+	background: #d5e5f780;
+	margin: 20px auto;
+	width: fit-content;
+	border-radius: 8px;
+	font-weight: 500;
+}
+#contact-info{
+	color:#1e1d1d;
+	text-align: center;
+}
+#theme-switch{
+	position: absolute;
+	display: table;
+	width: 50px;
+	height: 50px;
+	background: rgb(3,16,36);
+	background: -moz-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
+	background: -webkit-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
+	background: linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#031024",endColorstr="#122b2f",GradientType=1);
+	border-radius: 999px;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+	transform: translateX(80px) translateY(-80px);
+	animation: themeswitch 0.4s;
+	animation-delay: 2.2s;
+	animation-fill-mode: forwards;
+}
+#theme-switch-icon{
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+}
+/*res*/
 @media only screen and (max-width: 800px) and (min-width: 0px){
 	.project_photo{
 		height: auto;
@@ -274,100 +370,4 @@ h1::after {
 		color: #f46a16;
 	}
 
-}
-.project__techs{
-	position: absolute;
-	right: 10px;
-	color: #423636;
-}
-span{
-	margin-left: 10px;
-}
-.project_text{
-	text-align: right;
-	padding-left: 40px;
-	color: #a8b2d1;
-	font-weight: 500;
-	margin-right: 40px;
-	margin: 0px 0px 20px -30px;
-	background-color: #17191b;
-	padding: 20px;
-	border-radius: 7px;
-	box-shadow: 10px 10px 23px -4px rgba(0,0,0,0.75);
-}
-#greet{
-	font-family: 'Roboto Mono', monospace;
-	color: #f46a16;
-	font-size: clamp(18px,4.5vw,25px);
-	margin-bottom: 0px;
-	margin-left: 15px;
-}
-.line-1{
-	border-right: 8px solid;
-	white-space: nowrap;
-	overflow: hidden;
-}
-
-/* Animation */
-.anim-typewriter{
-	animation: typewriter 2s steps(18) 0s 1 normal both,
-	blinkTextCursor 600ms steps(20) infinite normal;
-}
-
-/*modals*/
-.contact-2{
-	background-color: transparent;
-	padding: 10px;
-	border: solid 1.5px #000000;
-	border-radius: 8px;
-	cursor: pointer;
-	color: #5e5a57;
-	font-family: 'Roboto Mono', monospace;
-	font-weight: 700;
-	font-size: 18px;
-	margin: 10px 0 0 10px;
-}
-.contact-2:hover{
-	background-color: #00000042;
-	color: #000000;
-	transition: 300ms ease-in;
-}
-#bottom{
-	text-align: center;
-	padding: 4px;
-	background: #d5e5f780;
-	margin: 20px auto;
-	width: fit-content;
-	border-radius: 8px;
-	font-weight: 500;
-}
-#contact-info{
-	color:#1e1d1d;
-	text-align: center;
-}
-#theme-switch{
-	position: absolute;
-	display: table;
-	width: 50px;
-	height: 50px;
-	background: rgb(3,16,36);
-	background: -moz-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
-	background: -webkit-linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
-	background: linear-gradient(90deg, rgba(3,16,36,1) 58%, rgba(18,43,47,1) 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#031024",endColorstr="#122b2f",GradientType=1);
-	border-radius: 999px;
-	top: 20px;
-	right: 20px;
-	cursor: pointer;
-	transform: translateX(80px) translateY(-80px);
-	animation: themeswitch 0.4s;
-	animation-delay: 2.2s;
-	animation-fill-mode: forwards;
-}
-#theme-switch-icon{
-	display: table-cell;
-	vertical-align: middle;
-	text-align: center;
-	font-size: 30px;
-	color: #fff;
 }
