@@ -161,7 +161,7 @@ h1::after {
 	font-weight: 700;
 	margin-bottom: 40px;
 	overflow: hidden;
-	box-shadow: 10px 10px 23px -4px rgba(0,0,0,0.75);
+	box-shadow: inset 3px 4px 20px 0px rgb(0 0 0 / 75%);
 	position: relative;
 	z-index: -10;
 }
@@ -309,6 +309,9 @@ span{
 	text-align: center;
 	font-size: 30px;
 	color: #fff;
+}
+#greet-wrap{
+	animation: greetAnim 1s;
 }
 /*res*/
 @media only screen and (max-width: 800px) and (min-width: 0px){

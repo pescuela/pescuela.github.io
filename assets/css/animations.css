@@ -23,15 +23,7 @@
 	from{border-right-color: rgba(0, 255, 0, 0.75);}
 	to{border-right-color: transparent;}
 }
-@keyframes blink{
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
 @keyframes greetAnim{
-	from {opacity: 0;
-	position: absolute;
-	top: 30px;}
-	to {opacity: 1;
-	position: unset;
-	top: unset;}
+  from {opacity: 0; margin-left: 150px;}
+  to {opacity: 1; margin-left: unset;}
 }
