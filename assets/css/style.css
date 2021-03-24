@@ -6,8 +6,13 @@ html{
 	user-select: none;
 	font-family: Inter;
 	scroll-behavior: smooth;
+	max-width: 3000px;
 }
 /*global*/
+img{
+	max-width: 100%;
+	max-height: 100%;
+}
 #panel{
 	padding: 75px 100px 0px 100px;
 }
@@ -181,15 +186,11 @@ h1::after {
 }
 /*images*/
 #project-2-img{
-	height: 400px;
-	text-align: ;
-	margin: 30px 0px 0px 130px;
+	
 	position: relative;
 	z-index: -1;
 }
 #project-3-img{
-	margin: 30px 0px -10px 0px;
-	height: 250px;
 	position: relative;
 	z-index: -1;
 }
@@ -235,7 +236,7 @@ span{
 	font-weight: 500;
 	margin-right: 40px;
 	margin: 0px 0px 20px -30px;
-	background: #192938;
+	background: #081f33;
 	padding: 20px;
 	border-radius: 7px;
 	box-shadow: 10px 10px 23px -4px rgba(0,0,0,0.75);
@@ -312,7 +313,7 @@ span{
 	color: darkgoldenrod;
 }
 #greet-wrap{
-	animation: greetAnim 1s;
+	animation: greetAnim 1.69s;
 }
 /*res*/
 @media only screen and (max-width: 800px) and (min-width: 0px){
@@ -342,7 +343,7 @@ span{
 		opacity: 0.2;
 	}
 	#project-3-img{
-		margin: -85px 120px;
+		margin: -85px 30px;
 		opacity: 0.2;
 	}
 	#project-4-img{
