@@ -1,29 +1,27 @@
-@keyframes themeswitch{
-	from {opacity: 0;transform: perspective(50px) translateZ(-50px);}
-	to {opacity: 1; transform: perspective(0px) translateZ(0px);}
+/*background*/
+@-webkit-keyframes grain{0%,to{-webkit-transform:translate(0);transform:translate(0)}10%{-webkit-transform:translate(-5%,-10%);transform:translate(-5%,-10%)}20%{-webkit-transform:translate(-15%,5%);transform:translate(-15%,5%)}30%{-webkit-transform:translate(7%,-25%);transform:translate(7%,-25%)}40%{-webkit-transform:translate(21%,25%);transform:translate(21%,25%)}50%{-webkit-transform:translate(-25%,10%);transform:translate(-25%,10%)}60%{-webkit-transform:translate(15%,5%);transform:translate(15%,5%)}70%{-webkit-transform:translateY(15%);transform:translateY(15%)}80%{-webkit-transform:translate(25%,35%);transform:translate(25%,35%)}90%{-webkit-transform:translate(-10%,10%);transform:translate(-10%,10%)}}@keyframes grain{0%,to{-webkit-transform:translate(0);transform:translate(0)}10%{-webkit-transform:translate(-5%,-10%);transform:translate(-5%,-10%)}20%{-webkit-transform:translate(-15%,5%);transform:translate(-15%,5%)}30%{-webkit-transform:translate(7%,-25%);transform:translate(7%,-25%)}40%{-webkit-transform:translate(21%,25%);transform:translate(21%,25%)}50%{-webkit-transform:translate(-25%,10%);transform:translate(-25%,10%)}60%{-webkit-transform:translate(15%,5%);transform:translate(15%,5%)}70%{-webkit-transform:translateY(15%);transform:translateY(15%)}80%{-webkit-transform:translate(25%,35%);transform:translate(25%,35%)}90%{-webkit-transform:translate(-10%,10%);transform:translate(-10%,10%)}}
+@-webkit-keyframes grain2{0%,to{-webkit-transform:translate(0);transform:translate(0)}10%{-webkit-transform:translate(-1%,-2%);transform:translate(-1%,-2%)}20%{-webkit-transform:translate(-2%,1%);transform:translate(-2%,1%)}30%{-webkit-transform:translate(3%,-5%);transform:translate(3%,-5%)}40%{-webkit-transform:translate(5%,5%);transform:translate(5%,5%)}50%{-webkit-transform:translate(-5%,2%);transform:translate(-5%,2%)}60%{-webkit-transform:translate(3%,1%);transform:translate(3%,1%)}70%{-webkit-transform:translateY(3%);transform:translateY(3%)}80%{-webkit-transform:translate(5%,7%);transform:translate(5%,7%)}90%{-webkit-transform:translate(-2%,2%);transform:translate(-2%,2%)}}@keyframes grain2{0%,to{-webkit-transform:translate(0);transform:translate(0)}10%{-webkit-transform:translate(-1%,-2%);transform:translate(-1%,-2%)}20%{-webkit-transform:translate(-3%,1%);transform:translate(-3%,1%)}30%{-webkit-transform:translate(3%,-5%);transform:translate(3%,-5%)}40%{-webkit-transform:translate(5%,5%);transform:translate(5%,5%)}50%{-webkit-transform:translate(-5%,2%);transform:translate(-5%,2%)}60%{-webkit-transform:translate(3%,1%);transform:translate(3%,1%)}70%{-webkit-transform:translateY(5%);transform:translateY(5%)}80%{-webkit-transform:translate(5%,7%);transform:translate(5%,7%)}90%{-webkit-transform:translate(-2%,2%);transform:translate(-2%,2%)}}
+
+/*text type*/
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 11.1em;}
 }
-@keyframes fadeUp{
-	from {opacity: 0; margin-top: 20px; transform: perspective(50px) translateZ(-5px);}
-	to {opacity: 1; margin-top: unset; transform: perspective(50px) translateZ(0px);}
+@keyframes blinkTextCursor{
+  from{border-right-color: #0aec11;}
+  to{border-right-color: transparent;}
 }
 
-@keyframes typewriter{
-	from{width: 0;}
-	to{width: 11.3em;}
+/*main anims*/
+@keyframes authorAnim{
+    from{transform: perspective(100px) translateZ(-10px) translateY(-10px);}
+    to{opacity: 1; transform: perspective(0px) translateZ(0px) translateY(0px);}
 }
-@keyframes blinkTextCursor{
-	from{border-right-color: rgba(0, 255, 0, 0.75);}
-	to{border-right-color: transparent;}
+@keyframes authorJobAnim{
+    from{transform: perspective(100px) translateZ(-10px) translateY(-10px);}
+    to{opacity: 1; transform: perspective(0px) translateZ(0px) translateY(0px);}
 }
-@keyframes typewriter{
-	from{width: 0;}
-	to{width: 11.3em;}
-}
-@keyframes blinkTextCursor{
-	from{border-right-color: rgba(0, 255, 0, 0.75);}
-	to{border-right-color: transparent;}
-}
-@keyframes greetAnim{
-  from {opacity: 0; margin-left: 150px;}
-  to {opacity: 1; margin-left: unset;}
+@keyframes buttonAnim{
+    from{transform: perspective(100px) translateZ(-10px) translateY(-10px);}
+    to{opacity: 1; transform: perspective(0px) translateZ(0px) translateY(0px);}
 }

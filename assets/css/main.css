@@ -1,0 +1,126 @@
+/*static*/
+body {
+	background-color: #111111;
+	margin: 0;
+	overflow-x: hidden;
+}
+p{margin: 10px;}
+.main {
+	position: fixed;
+	width: 65%;
+	margin: auto;
+	height: 100%;
+	right: 0;
+	left: 0;
+}
+#noise {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+	pointer-events: none;
+	z-index: 90;
+}
+
+#noise:before {
+	content: '';
+	position: absolute;
+	top: -100%;
+	left: -100%;
+	height: 300%;
+	width: 300%;
+	background: url(../img/noise.png);
+	pointer-events: none;
+	display: block;
+	opacity: 0.9;
+	-webkit-animation: grain 1s steps(10) infinite;
+	animation: grain 1s steps(10) infinite;
+	will-change: transform;
+}
+
+.greet-type{
+	position: absolute;
+	top: 150px;
+	font-size: 35px;
+	font-weight: bold;
+	color: #0aec11;
+	font-size: clamp(1.2rem, 6vw, 2.4rem);	
+	padding: 5px;
+}
+.line-1{  
+	width: 11.1em;
+	border-right: 13px solid #0aec11;
+	font-size: clamp(1.2rem, 6vw, 2.4rem);	
+	white-space: nowrap;
+	overflow: hidden;
+	font-family: Roboto Mono, monospace;
+	margin-top: 150px;
+	margin-left: 30px;
+	color: #cacfd7;
+}
+#author{
+	opacity: 0;
+	font-family: 'Press Start 2P';
+	font-size: clamp(70px, 11vw, 250px);
+	margin-top: 50px;
+	color: #dc4712;
+	text-shadow: -5px 11px 0px #252525;
+	animation: authorAnim 1s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+}
+#author_job{
+	opacity: 0;
+	font-family: 'Press Start 2P';
+	font-size: 3vw;
+	color: #a0a0a0f0;
+	animation: authorJobAnim 1s;
+	animation-delay: 3.2s;
+	animation-fill-mode: forwards;
+}
+.anim-typewriter{
+	animation: typewriter 2s steps(19) 1s 1 normal both,
+	blinkTextCursor 500ms steps(19) infinite normal;
+}
+button{
+	opacity: 0;
+	padding: 11px;
+	font-family: Roboto Mono, monospace;
+	margin: 25px 0px 0px 10px;
+	font-size: 1.3vw;
+	font-weight: bold;
+	background: #a5a5a5;
+	border: none;
+	animation: buttonAnim 1s;
+	animation-delay: 3.4s;
+	animation-fill-mode: forwards;
+	transition: background 0.6s, color 0.6s;
+}
+button:hover{
+	background: #252525;
+    color: aquamarine;
+    cursor: pointer;
+}
+/*mobile*/
+@media only screen and (max-width: 1200px) {
+	.main {
+		position: fixed;
+		width: 85%;
+		margin: auto;
+		height: 100%;
+		right: 0;
+		left: 0;
+	}
+	#author{
+		font-size: 14vw;
+		margin-top: unset;
+	}
+	#author_job{
+		font-size: 4vw;
+	}
+	button{
+		font-size: 3.2vw;
+	}
+}
