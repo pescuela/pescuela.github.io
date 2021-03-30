@@ -145,7 +145,7 @@ button:focus{
 		right: 0;
 		left: 0;
 	}
-	#author{
+	li{
 		font-size: clamp(60px, 14.5vw, 250px);
 		margin-top: unset;
 	}
