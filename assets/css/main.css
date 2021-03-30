@@ -1,10 +1,13 @@
 /*static*/
+html{
+	user-select: none;
+}
 body {
 	background-color: #111111;
 	margin: 0;
 	overflow-x: hidden;
 }
-p{margin: 10px;}
+p{margin: 10px 0px;}
 .main {
 	position: fixed;
 	width: 65%;
@@ -45,6 +48,7 @@ p{margin: 10px;}
 	top: 150px;
 	font-size: 35px;
 	font-weight: bold;
+	font-family: monospace;
 	color: #0aec11;
 	font-size: clamp(1.2rem, 6vw, 2.4rem);	
 	padding: 5px;
@@ -57,13 +61,13 @@ p{margin: 10px;}
 	overflow: hidden;
 	font-family: Roboto Mono, monospace;
 	margin-top: 150px;
-	margin-left: 30px;
+	margin-left: 40px;
 	color: #cacfd7;
 }
-#author{
+li{
 	opacity: 0;
 	font-family: 'Press Start 2P';
-	font-size: clamp(70px, 11vw, 250px);
+	font-size: clamp(60px, 11vw, 250px);
 	margin-top: 50px;
 	color: #dc4712;
 	text-shadow: -5px 11px 0px #252525;
@@ -71,6 +75,29 @@ p{margin: 10px;}
 	animation-delay: 3s;
 	animation-fill-mode: forwards;
 }
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  zoom: 1;
+  *display: inline;
+  padding: 0px;
+  color: white;
+}
+a.color1:hover { color: #ff0000; }
+a.color2:hover { color: #0050b5; }
+a.color3:hover { color: #c10034; }
+a.color4:hover { color: #c1b300; }
+a.color5:hover { color: #02c100; }
+a.color6:hover {color: #8a00c1;}
+a.color7:hover {color: #172eda;}
+a.color8:hover {color: #ff8f00;}
+a.color9:hover {color: #9e2121;}
+a.color10:hover {color: #a4093a;}
+
 #author_job{
 	opacity: 0;
 	font-family: 'Press Start 2P';
@@ -82,13 +109,13 @@ p{margin: 10px;}
 }
 .anim-typewriter{
 	animation: typewriter 2s steps(19) 1s 1 normal both,
-	blinkTextCursor 500ms steps(19) infinite normal;
+	blinkTextCursor 1111ms steps(19) infinite normal;
 }
 button{
 	opacity: 0;
-	padding: 11px;
-	font-family: Roboto Mono, monospace;
-	margin: 25px 0px 0px 10px;
+	padding: 14px 11px 14px 11px;
+	font-family: 'Press Start 2P';
+	margin-top: 20px;
 	font-size: 1.3vw;
 	font-weight: bold;
 	background: #a5a5a5;
@@ -97,11 +124,16 @@ button{
 	animation-delay: 3.4s;
 	animation-fill-mode: forwards;
 	transition: background 0.6s, color 0.6s;
+	cursor: pointer;
 }
-button:hover{
-	background: #252525;
-    color: aquamarine;
-    cursor: pointer;
+button:hover {
+    background: #0c4d9e;
+    color: #fcfcfc;
+}
+button:focus{
+	outline: #0beb12 solid 5px;
+	background: #0c4d9e;
+    color: #fcfcfc;
 }
 /*mobile*/
 @media only screen and (max-width: 1200px) {
@@ -114,13 +146,15 @@ button:hover{
 		left: 0;
 	}
 	#author{
-		font-size: 14vw;
+		font-size: clamp(60px, 14.5vw, 250px);
 		margin-top: unset;
 	}
 	#author_job{
 		font-size: 4vw;
 	}
 	button{
+		margin-top: 5px;
 		font-size: 3.2vw;
 	}
+
 }

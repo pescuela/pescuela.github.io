@@ -10,17 +10,44 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 	<link rel="icon" type="image/png" href="/assets/img/pescuela-1.ico">
+	<script src="https://code.jquery.com/jquery-1.7.1.min.js" integrity="sha256-iBcUE/x23aI6syuqF7EeT/+JFBxjPs5zeFJEXxumwb0=" crossorigin="anonymous"></script>
 </head>
 <body>
 	<div id="noise"></div>
 	<div class="main">
 		<div class="greet-type">></div>
 		<p class="line-1 anim-typewriter">hello, world! i am</p>
-		<p id="author">HAROLD</p>
-		<p id="author_job">Computer Engineer</p>
-		<button onclick="window.location='mailto:harold@pescuela.dev';">Say hello</button>
-	</div>
+		<ul>
+     <li><a>H</a></li><!--
+  --><li><a>A</a></li><!--
+  --><li><a>R</a></li><!--
+  --><li><a>O</a></li><!--
+  --><li><a>L</a></li><!--
+--><li><a>D</a></li>
+</ul>
+<p id="author_job">Computer Engineer</p>
+<button onclick="window.location='mailto:harold@pescuela.dev';">Say hello</button>
+</div>
 
 
 </body>
+<script>
+	$(document).ready(function()
+	{
+		$("a").hover(function(e)
+		{
+			var randomClass = getRandomClass();
+			$(e.target).attr("class", randomClass);
+		});
+	});
+
+	function getRandomClass()
+	{
+    var colors = new Array("color1", "color2", "color3", "color4", "color5", "color6", "color7", "color8", "color9", "color110");
+    var randNum = Math.floor(Math.random()*6);
+    
+    return colors[randNum];
+}
+
+</script>
 </html>
