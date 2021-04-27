@@ -112,8 +112,7 @@ a.color10:hover {color: #a4093a;}
 	animation-fill-mode: forwards;
 }
 .anim-typewriter{
-	animation: typewriter 2s steps(19) 1s 1 normal both,
-	blinkTextCursor 400ms steps(19) infinite normal;
+	animation: typewriter 2s steps(19) 1s 1 normal both, blinkTextCursor 530ms steps(2) infinite normal;
 }
 button{
 	opacity: 0;
