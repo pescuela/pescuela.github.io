@@ -9,7 +9,7 @@
 }
 @keyframes blinkTextCursor{
   from{border-right-color: #0aec11;}
-  to{border-right-color: transparent;}
+  to{border-right: none;}
 }
 
 /*main anims*/
