@@ -113,7 +113,7 @@ a.color10:hover {color: #a4093a;}
 }
 .anim-typewriter{
 	animation: typewriter 2s steps(19) 1s 1 normal both,
-	blinkTextCursor 1111ms steps(19) infinite normal;
+	blinkTextCursor 400ms steps(19) infinite normal;
 }
 button{
 	opacity: 0;
