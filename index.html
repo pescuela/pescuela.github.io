@@ -4,17 +4,18 @@
 	<title>Harold Pescuela</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-	<link rel="stylesheet" href="/assets/css/main.css">
-	<link rel="stylesheet" href="/assets/css/animations.css">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<link rel="stylesheet" href="assets/css/animations.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/roboto-mono-webfont@2.0.986/roboto-mono.min.css">
-	<link rel="stylesheet" href="/assets/css/press-start.min.css">
+	<link rel="stylesheet" href="assets/css/press-start.min.css">
 	<link rel="icon" type="image/png" href="/assets/img/pescuela-1.ico">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-	<script src="/assets/js/jquery-1-7-1.min.js"></script>
+	<script src="assets/js/jquery-1-7-1.min.js"></script>
 </head>
 <body>
 	<div id="noise"></div>
 	<div class="main">
+	<div class="box"></div>
 		<div class="greet-type">></div>
 		<p class="line-1 anim-typewriter">hello, world! i am</p>
 		<ul>
@@ -26,7 +27,7 @@
 --><li><a>D</a></li>
 </ul>
 <p id="author_job">Computer Engineer</p>
-<button onclick="window.location='mailto:harold@pescuela.dev';">Say hello</button>
+<button onclick="window.location='mailto:harold@pescuela.dev';">Say hi</button>
 </div>
 <div class="social"><i onclick="window.location='https://linkedin.com/in/haroldpescuela';" class="fab fa-linkedin-in"></i></div>
 </body>
@@ -35,18 +36,16 @@
 	{
 		$("a").hover(function(e)
 		{
-			var randomClass = getRandomClass();
-			$(e.target).attr("class", randomClass);
+			var randCL = mnansmns();
+			$(e.target).attr("class", randCL);
 		});
 	});
-
-	function getRandomClass()
+	function mnansmns()
 	{
-    var colors = new Array("color1", "color2", "color3", "color4", "color5", "color6", "color7", "color8", "color9", "color110");
+    var colors = new Array("color1", "color2", "color3", "color4", "color5", "color6", "color7", "color8", "color9", "color10");
     var randNum = Math.floor(Math.random()*6);
     
     return colors[randNum];
 }
-
 </script>
 </html>
