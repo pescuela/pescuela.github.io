@@ -9,6 +9,19 @@ body {
 }
 p{margin: 10px 0px;}
 i{cursor: pointer;}
+.box{
+	position: absolute;
+    border: solid 1px #fd3b01;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 50px;
+    border-radius: 20px;
+	animation: boxAnim 1s;
+}
+
 .main {
 	position: fixed;
 	width: 65%;
@@ -53,6 +66,7 @@ i{cursor: pointer;}
 	color: #0aec11;
 	font-size: clamp(1.2rem, 6vw, 2.4rem);	
 	padding: 5px;
+	animation: boxAnim 1s;
 }
 .line-1{  
 	width: 11.1em;
@@ -64,6 +78,7 @@ i{cursor: pointer;}
 	margin-top: 150px;
 	margin-left: 40px;
 	color: #cacfd7;
+	animation: boxAnim 1s;
 }
 li{
 	opacity: 0;
@@ -135,16 +150,24 @@ button:hover, button:focus {
 .social {
     opacity: 0;
     position: fixed;
-    bottom: 10px;
-    color: #ff7635;
-    font-size: 25px;
-    width: 100%;
-    text-align: center;
+    bottom: 15px;
+    width: 90%;
+    text-align: right;
     animation: socialAnim 1s;
     animation-delay: 3.6s;
     animation-fill-mode: forwards;
-    border-top: solid 1px;
-    padding-top: 10px;
+	font-family: Roboto Mono, monospace;
+}
+#social-links{
+	text-decoration: none;
+    font-size: 17px;
+    color: #ff7635;
+	overflow: hidden;
+	margin-right: 10px;
+}
+#social-links:hover{
+	border: dashed 1px #ff7635;
+    padding: 2.5px;
 }
 /*mobile*/
 @media only screen and (max-width: 1200px) {
@@ -170,5 +193,6 @@ button:hover, button:focus {
 	.greet-type{
 		top: 150px;
 	}
+	.box{display:none}
 
 }
