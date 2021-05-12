@@ -29,3 +29,8 @@
     from{transform: perspective(100px) translateZ(-10px) translateY(-10px);}
     to{opacity: 1; transform: perspective(0px) translateZ(0px) translateY(0px);}
 }
+@keyframes boxAnim{
+	from{transform: perspective(100px) translateZ(-10px) translateY(-10px);}
+    to{opacity: 1; transform: perspective(0px) translateZ(0px) translateY(0px);}
+}
+	
