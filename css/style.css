@@ -135,15 +135,15 @@ h1 { font-size: 30px; font-weight: 800;}
 }
  
 .fade-in.two {
-	-webkit-animation-delay: 1.5s;
-	-moz-animation-delay: 1.5s;
-	animation-delay: 1.5s;
+	-webkit-animation-delay: 1s;
+	-moz-animation-delay: 1s;
+	animation-delay: 1s;
 }
  
 .fade-in.three {
-	-webkit-animation-delay: 2.6s;
-	-moz-animation-delay: 2.6s;
-	animation-delay: 2.6s;
+	-webkit-animation-delay: 1.5s;
+	-moz-animation-delay: 1.5s;
+	animation-delay: 1.5s;
 }
 
 /* Vertical centering */
