@@ -308,7 +308,7 @@ footer {
 	}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 180px) {
 
 	.shots article { width: 48%; }
 	
@@ -324,7 +324,7 @@ footer {
 	}
 }
 
-@media (max-width: 384px) {
+@media (max-width: 184px) {
 	header {
 		padding: 50px 25px;
 		min-height: auto;
