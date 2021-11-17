@@ -68,4 +68,5 @@ div.tabcontents
     border-top: 2px solid rgb(0, 0, 0);
     padding: 30px;
     transition: 0.5s;
+    margin-bottom: 10px;
 }
