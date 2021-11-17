@@ -1,11 +1,26 @@
 /* Harold Pescuela */
 
+[data-theme="light"] {
+	--background-color: #fff;
+	--text-color: #000;
+	--filter: invert(0);
+  }
+
+[data-theme="dark"] {
+	--background-color: #000000;
+	--text-color: #fff;
+	--filter: invert(1);
+  }
+
 html{
 	user-select: none
 }
 body{
 	font-family: 'Inter', 'sans-serif';
 	margin:  0;
+	background-color: var(--background-color);
+  	color: var(--text-color);
+	  transition: 0.5s;
 }
 
 .main{
@@ -54,16 +69,25 @@ h1{
 	font-size: 12px;
 	font-family: 'Roboto Mono', monospace;
 	background-color: #fff;
-}
-hr{
-	opacity: 0.69;
+	background-color: var(--background-color);
+	transition: 0.5s;
 }
 a{
 	text-decoration: none;
-	color: #000;
+	color: inherit;
 }
 a:hover{
 	color: rgb(255, 255, 255);
 	background-color: rgb(219, 69, 0);
+	transition: 0.5s;
+}
+img{
+	filter: var(--filter);
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	width: 40px;
+	height: auto;
+	cursor: pointer;
 	transition: 0.5s;
 }
