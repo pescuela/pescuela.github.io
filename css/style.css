@@ -1,12 +1,14 @@
 /* Harold Pescuela */
 
 body{
+	font-family: 'Inter', 'sans-serif';
 	margin:  0;
 }
 .header{
 	width: 100%;
 	text-align: center;
 	padding: 10px 0px 5px 0px;
+	font-weight: 400;
 }
 .header > span{
 	margin-left: 25px;
@@ -34,7 +36,6 @@ body{
 	}
 }
 h1{
-	font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-weight: 800;
 }
 .intro{
