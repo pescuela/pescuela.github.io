@@ -93,9 +93,14 @@ a:hover{
 }
 .doc {
 	filter: var(--filter);
-	opacity: 0.2;
-	width: 15%;
+	opacity: 0.3;
+	width: 12%;
 	cursor: pointer;
 	transition: 0.5s;
+	text-align: center;
+}
+.image-cont{
+	width: 100%;
+	height: auto;
 	text-align: center;
 }

@@ -84,4 +84,5 @@ div.tabcontents
     padding: 30px;
     transition: 0.5s;
     margin-bottom: 10px;
+    box-shadow: -4px 7px #888888;
 }
