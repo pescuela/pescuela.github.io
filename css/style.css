@@ -56,11 +56,6 @@ h1{
 .skills{
 	font-family: 'Roboto Mono', monospace;
 }
-.social{
-	font-family: 'Roboto Mono', monospace;
-	margin-top: 30px;
-	width: 50%;
-}	
 .footer{
 	position: fixed;
 	bottom: 0;
@@ -103,4 +98,7 @@ a:hover{
 	width: 100%;
 	height: auto;
 	text-align: center;
+}
+.links{
+	font-family: 'Roboto Mono', monospace;
 }
