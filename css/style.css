@@ -20,7 +20,7 @@ body{
 	margin:  0;
 	background-color: var(--background-color);
   	color: var(--text-color);
-	  transition: 0.5s;
+	transition: 0.5s;
 }
 
 .main{

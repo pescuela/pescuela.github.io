@@ -1,3 +1,16 @@
+[data-theme="light"] {
+	--background-color: #fff;
+	--text-color: #000;
+    --border:1px solid #000;
+	
+  }
+
+[data-theme="dark"] {
+	--background-color: #000000;
+	--text-color: #fff;
+    --border:1px solid rgb(218, 218, 218);
+	
+  }
 
 ul.tabs
 {
@@ -6,9 +19,9 @@ ul.tabs
     margin:0;
     list-style-type: none;
     text-align: center; /*set to left, center, or right to align the tabs as desired*/
-    border:1px solid rgb(255 118 0);
+    border: var(--border);
     border-bottom:none;
-    background:#BBBBBB;
+    background: rgb(202, 40, 0);
 }
         
 ul.tabs li
@@ -24,16 +37,19 @@ ul.tabs li a
     text-decoration: none;
     position: relative;
     padding: 8px 20px;
-    border: 1px solid rgb(255 118 0);
+    border: var(--border);
     border-right:none;
     color: #000;
     background: #FFF;
     outline:none;
+    font-family: 'Inter', 'sans-serif';
+    font-weight: 700;
+    font-size: 15px;
 } 
        
 ul.tabs li:last-child a
 {
-    border-right:1px solid rgb(255 118 0);
+    border-right:1px solid #000);
 } 
         
 ul.tabs li a:visited
@@ -52,7 +68,7 @@ ul.tabs li.selected a, ul.tabs li.selected a:hover
     position: relative;
     top: 0px;
     font-weight:bold;
-    background: rgb(255 118 0);
+    background: rgb(167, 67, 0);
     color:White;
 }
         
@@ -64,7 +80,7 @@ ul.tabs li.selected a:hover
 
 div.tabcontents
 {
-    border: 1px solid rgb(0, 0, 0);
+    border: var(--border);
     border-top: 2px solid rgb(0, 0, 0);
     padding: 30px;
     transition: 0.5s;
