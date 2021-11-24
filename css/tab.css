@@ -21,7 +21,7 @@ ul.tabs
     text-align: center; /*set to left, center, or right to align the tabs as desired*/
     border: var(--border);
     border-bottom:none;
-    background: rgb(202, 40, 0);
+    background: rgb(202, 40, 0 / 35%);
 }
         
 ul.tabs li
@@ -38,7 +38,6 @@ ul.tabs li a
     position: relative;
     padding: 8px 20px;
     border: var(--border);
-    border-right:none;
     color: #000;
     background: #FFF;
     outline:none;
@@ -81,7 +80,7 @@ ul.tabs li.selected a:hover
 div.tabcontents
 {
     border: var(--border);
-    border-top: 2px solid rgb(0, 0, 0);
+    border-top: var(--border);
     padding: 30px;
     transition: 0.5s;
     margin-bottom: 10px;

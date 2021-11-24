@@ -81,7 +81,7 @@ a:hover{
 	background-color: rgb(219, 69, 0);
 	transition: 0.5s;
 }
-img{
+.ld{
 	filter: var(--filter);
 	position: fixed;
 	top: 20px;
@@ -90,4 +90,12 @@ img{
 	height: auto;
 	cursor: pointer;
 	transition: 0.5s;
+}
+.doc {
+	filter: var(--filter);
+	opacity: 0.2;
+	width: 15%;
+	cursor: pointer;
+	transition: 0.5s;
+	text-align: center;
 }
