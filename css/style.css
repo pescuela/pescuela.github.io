@@ -102,3 +102,7 @@ a:hover{
 .links{
 	font-family: 'Roboto Mono', monospace;
 }
+.descr{
+	padding-left: 30px;
+	font-weight: 400;
+}
